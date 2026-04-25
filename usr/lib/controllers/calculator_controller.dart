@@ -86,7 +86,7 @@ class CalculatorController extends GetxController {
     _resetDisplay = false;
   }
 
-  void onDelete() {
+  void onBackspace() {
     if (_resetDisplay || display.value == 'Error') return;
     
     if (display.value.length > 1) {

@@ -38,7 +38,7 @@ class CalculatorScreen extends StatelessWidget {
                     GestureDetector(
                       onHorizontalDragEnd: (details) {
                         if (details.primaryVelocity != null && details.primaryVelocity != 0) {
-                          controller.onDelete();
+                          controller.onBackspace();
                         }
                       },
                       child: Obx(() {
